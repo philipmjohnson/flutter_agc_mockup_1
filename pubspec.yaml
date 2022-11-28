@@ -1,0 +1,40 @@
+name: flutter_agc_mockup
+description: A new Flutter project.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_native_splash: ^2.2.14
+  badges: ^2.0.3
+  json_theme: ^4.0.0
+  flutter_markdown: ^0.6.13
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  image: assets/images/vegetables.png
+  color: "#2E7D32"
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/theme/
